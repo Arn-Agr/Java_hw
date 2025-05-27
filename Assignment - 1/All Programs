@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Hello World!");
+        
+        int a = 10, b = 5;
+        System.out.println("   Sum 1: " + (a + b));
+        System.out.println("   Difference 1: " + (a - b));
+        System.out.println("   Sum 2: " + (b + a));
+        System.out.println("   Difference 2: " + (b - a));
+        
+        int x = 7, y = 9, temp;
+        temp = x;
+        x = y;
+        y = temp;
+        System.out.println("Swapped using third variable: x = " + x + ", y = " + y);
+
+        int m = 4, n = 6;
+        m = m + n;
+        n = m - n;
+        m = m - n;
+        System.out.println("Swapped without third varible: m = " + m + ", n = " + n);
+
+        System.out.print("Enter radius of circle: ");
+        double radius = sc.nextDouble();
+        double circleArea = 22 / 7 * radius * radius;
+        System.out.println("   Area of circle: " + circleArea);
+
+        System.out.print("Enter a number to find cube: ");
+        int num = sc.nextInt();
+        System.out.println("   Cube is: " + (num * num * num));
+
+        System.out.print("Enter dividend: ");
+        int dividend = sc.nextInt();
+        System.out.print("   Enter divisor: ");
+        int divisor = sc.nextInt();
+        System.out.println("   Quotient: " + (dividend / divisor));
+        System.out.println("   Remainder: " + (dividend % divisor));
+
+        System.out.print("Enter a 4-digit number: ");
+        int num4 = sc.nextInt();
+        int d1 = num4 / 1000;
+        int d2 = (num4 / 100) % 10;
+        int d3 = (num4 / 10) % 10;
+        int d4 = num4 % 10;
+        int sumDigits = d1 + d2 + d3 + d4;
+        System.out.println("   Sum of digits: " + sumDigits);
+
+        System.out.print("   Enter base and height for triangle: ");
+        double base = sc.nextDouble();
+        double height = sc.nextDouble();
+        double areaT = base / 2 * height;
+        System.out.println("   Area of Triangle: " + areaT);
+
+        System.out.print("10. Enter a 4-digit number: ");
+        int number = sc.nextInt();
+        int first = number / 1000;
+        int last = number % 10;
+        System.out.println("   Sum of first and last digits: " + (first + last));
+
+        System.out.println("Enter marks of 5 subjects:");
+        int total = 0;
+        total += sc.nextInt();
+        total += sc.nextInt();
+        total += sc.nextInt();
+        total += sc.nextInt();
+        total += sc.nextInt();
+        double average = total / 5.0;
+        double percentage = (total / 500.0) * 100;
+        System.out.println("   Total Marks: " + total);
+        System.out.println("   Average Marks: " + average);
+        System.out.println("   Percentage: " + percentage + "%");
+    }
+}
