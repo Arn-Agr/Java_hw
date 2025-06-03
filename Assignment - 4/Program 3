@@ -1,0 +1,13 @@
+class Area {
+    double calculate(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+    double calculate(double length, double width) {
+        return length * width;
+    }
+
+    double calculate(double base, double height, boolean isTriangle) {
+        return 0.5 * base * height;
+    }
+}
