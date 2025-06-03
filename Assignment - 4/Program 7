@@ -1,0 +1,13 @@
+class TemperatureConverter {
+    double convertCtoF(double celsius) {
+        return (celsius * 9 / 5) + 32;
+    }
+
+    double convertFtoC(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+    }
+
+    double convertKtoC(double kelvin) {
+        return kelvin - 273.15;
+    }
+}
