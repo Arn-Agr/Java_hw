@@ -1,0 +1,22 @@
+class Movie {
+    String title, genre;
+    int releaseYear;
+
+    Movie(String title) {
+        this(title, "Unknown", 0);
+    }
+
+    Movie(String title, String genre) {
+        this(title, genre, 0);
+    }
+
+    Movie(String title, String genre, int year) {
+        this.title = title;
+        this.genre = genre;
+        this.releaseYear = year;
+    }
+
+    void display() {
+        System.out.println(title + " - " + genre + " (" + releaseYear + ")");
+    }
+}
