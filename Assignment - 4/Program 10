@@ -1,0 +1,17 @@
+class ShapeDrawer {
+    void draw() {
+        System.out.println("Drawing shape");
+    }
+
+    void draw(String shapeName) {
+        System.out.println("Drawing " + shapeName);
+    }
+
+    void draw(String shapeName, int size) {
+        System.out.println("Drawing " + shapeName + " of size " + size);
+    }
+
+    void draw(String shapeName, int width, int height) {
+        System.out.println("Drawing " + shapeName + " of width " + width + " and height " + height);
+    }
+}
