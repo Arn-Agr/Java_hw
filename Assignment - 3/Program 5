@@ -1,0 +1,9 @@
+public class Power {
+    public static void main(String[] args) {
+        int x = 2, y = 3, result = 1;
+        for (int i = 1; i <= y; i++) {
+            result *= x;
+        }
+        System.out.println(x + "^" + y + " = " + result);
+    }
+}
